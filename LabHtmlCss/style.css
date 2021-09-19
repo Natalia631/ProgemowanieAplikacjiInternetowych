@@ -1,0 +1,11 @@
+li { list-style-type: square }
+#cena { color: red; font-weight: bold } /* selektor z identyfikatorem */
+.wstęp { font-style: italic } /* selektor dla znaczników danej klasy */
+td img { border-color: blue; border-style: solid } /* znaczniki zagnieżdżone */
+td img:hover { border-color: red; border-style: solid } /* selektor z pseudo-atrybutem */
+h1 + h2 { letter-spacing: 5px } /* selektor z następstwem znaczników */
+td[colspan="2"] > p { font-size: small } /* selektor z wartością atrybutu i potomkiem */
+p + p { color: gray }
+body { background-image: url(books.png); background-repeat: repeat-y }
+h1 { color: blue }
+h1 { color: green } /* ZOSTAŁA ZASTOSOWANA NAJPÓŹNIEJ ZADEKLAROWANA WARTOŚĆ */

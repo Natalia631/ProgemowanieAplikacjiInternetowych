@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>  
+    <meta charset="utf-8" />
+    <title>Strona w HTML5</title>
+    <script type="text/javascript">
+        function Draw()
+        {
+        var canvas = document.getElementById("c");
+        var c = canvas.getContext("2d");
+        var g = c.createLinearGradient(0, 0, 400, 400);
+        g.addColorStop(0, "yellow");
+        g.addColorStop(1, "green");
+        c.fillStyle = g;
+        c.fillRect(0, 0, 400, 400);
+        }
+    </script>
+    
+</head>
+<body onload="Draw()">
+    <form>
+        <input name="pole" placeholder="Szukaj!"><br>
+        <input name="ocana" type="number" min="2" max="5" step="0.5" value="2"><br>
+        <input name="poprawka" type="range" min="2" max="5" step="0.5" value="2"><br>
+        <input name="termin" type="date" required><br>
+        <input name="adres" type="email" autofocus><br>
+        <input name="kolor" type="color"><br>
+        <input type="submit" value="Szukaj">
+    </form>
+
+    <canvas id="c" width="400" height="400"></canvas>
+
+</body>
+
+</html>
